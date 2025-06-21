@@ -1,3 +1,4 @@
+// src/App.jsx
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Login from './pages/Login';
@@ -16,7 +17,7 @@ const App = () => (
       <Route path="/junior/docs" element={<JuniorDocsStatus />} />
       <Route path="/senior" element={<SeniorDashboard />} />
       <Route path="/senior/review-log" element={<SeniorReviewLog />} />
-      <Route path="/senior/review/:id" element={<SeniorReviewDetail />} />   
+      <Route path="/senior/review/:id" element={<SeniorReviewDetail />} />
     </Routes>
   </Router>
 );
